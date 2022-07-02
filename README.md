@@ -1,5 +1,8 @@
 # Cocktail App
-Une application destinée à l'affichage et à la recherche d'ingrédients pour la confection de cocktails d'exceptions !
+
+Une application destinée à l'affichage et à la recherche d'ingrédients pour la confection de *cocktails d'exceptions* !
+
+![alt text][https://raw.githubusercontent.com/DanyLm/cocktail-app/master/public/logo.png]
 
 ## Fonctionnalités
  - A l'ouverture de l'app, une liste exhaustive de cocktails affichés de manière aléatoire (10) 
@@ -20,7 +23,7 @@ Une application destinée à l'affichage et à la recherche d'ingrédients pour 
 > v18.4.0
 ```
 ```
-> npm ---version
+> npm --version
 > 8.12.1
 ```
 
