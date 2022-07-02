@@ -2,7 +2,9 @@
 
 Une application destinée à l'affichage et à la recherche d'ingrédients pour la confection de *cocktails d'exceptions* !
 
-![alt text](https://raw.githubusercontent.com/DanyLm/cocktail-app/master/public/android-chrome-192x192.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DanyLm/cocktail-app/master/public/android-chrome-192x192.pnge" alt="Cocktail App logo"/>
+</p>
 
 ## Fonctionnalités
  - A l'ouverture de l'app, une liste exhaustive de cocktails affichés de manière aléatoire (10) 
