@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
+// Personnalized components
+import { Layout } from './components';
+import { Home, Cocktail } from './views';
+import CocktailContextProvider from './contexts/CocktailContext';
+
+/**
+ *
+ * @returns
+ */
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Routes>
+            <Route element={<CocktailContextProvider />}>
+                <Route path="/" element={<Layout />}>
+                    {/* Public route */}
+                    <Route index element={<Home />} />
+                    <Route path="cocktail/:cocktailId" element={<Cocktail />} />
+                </Route>
+
+                {/* Not found route */}
+                <Route path="*" element={<Navigate to="/" replace />} />
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;
