@@ -41,7 +41,7 @@ const Home = () => {
                 .catch(err => console.error(err));
 
             setAppState('loading');
-        }, 800);
+        }, 600);
 
         return () => {
             controller.abort();
