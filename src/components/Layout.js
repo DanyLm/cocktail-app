@@ -1,6 +1,6 @@
 import { Outlet, useLocation, matchRoutes } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
-import { Drawer, Box } from '@mui/material';
+import { Drawer, Box, CircularProgress } from '@mui/material';
 
 // Personnalized components
 import useCocktail from '../contexts/useCocktail';
@@ -70,7 +70,7 @@ const sx = img => {
  * @returns
  */
 const Layout = () => {
-    const { cocktail } = useCocktail();
+    const { cocktail, appState } = useCocktail();
     const location = useLocation();
     const routes = [{ path: 'cocktail/:cocktailId' }];
     const matched = matchRoutes(routes, location);
@@ -83,7 +83,21 @@ const Layout = () => {
                 variant="persistent"
                 anchor="left"
                 open={openDrawer}
-            />
+            >
+                {appState === 'loading' && (
+                    <Box
+                        sx={{
+                            textAlign: 'center',
+                            height: '100%',
+                            justifyContent: 'center',
+                            display: 'flex',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <CircularProgress color="primary" />
+                    </Box>
+                )}
+            </Drawer>
             <Main open={openDrawer}>
                 <Outlet />
             </Main>
