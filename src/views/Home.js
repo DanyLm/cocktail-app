@@ -10,7 +10,9 @@ import {
     Paper,
     Stack,
     TextField,
-    InputAdornment
+    InputAdornment,
+    Typography,
+    Box
 } from '@mui/material';
 
 // Icons
@@ -123,7 +125,15 @@ const Home = () => {
                 />
             </Paper>
             <Paper>
-                <List>{renderedChildren}</List>
+                <List>
+                    <ListItem>
+                        <Typography variant="body2" color="primary">
+                            Nombre de résultats : {cocktails.length}
+                        </Typography>
+                    </ListItem>
+
+                    {renderedChildren}
+                </List>
             </Paper>
             <div />
         </Stack>
