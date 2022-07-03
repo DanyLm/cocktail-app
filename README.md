@@ -14,7 +14,7 @@ Une application destinée à l'affichage et à la recherche d'ingrédients pour 
 ## Interface
  - Material UI a été utilisé pour la réalisation des graphismes
  - Des skeletons ont été mis en place lors du chargement des données
- - Lors d'une recherche les mots clés saisi sont mis en exergue pour pouvoir mieux les identifier 
+ - Lors d'une recherche les mots clés saisi sont mis en exergues pour pouvoir mieux les identifier 
 
 ## Usage
 - **npm install**
