@@ -11,8 +11,7 @@ import {
     Stack,
     TextField,
     InputAdornment,
-    Typography,
-    Box
+    Typography
 } from '@mui/material';
 
 // Icons
