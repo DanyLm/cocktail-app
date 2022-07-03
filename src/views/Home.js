@@ -92,7 +92,7 @@ const Home = () => {
                             `${cocktail.strGlass} - ${cocktail.strCategory} ${cocktail.strAlcoholic}`
                         ) : (
                             <font style={{ color: theme.palette.secondary.main }}>
-                                Trouvé dans la recette
+                                Trouvé(e) dans la recette
                             </font>
                         )
                     }
