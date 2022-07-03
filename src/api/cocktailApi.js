@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import axios from './axios';
-import { alphabeticalOrder } from '../helpers/sort';
+import { alphabeticalOrder } from '../utils/sort';
 
 /**
  *
